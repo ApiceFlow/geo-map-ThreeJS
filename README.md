@@ -1,3 +1,5 @@
+APICEFLOW - GEOLOCATION MAP USING THREE.JS
+
 # Geo-Three
 
 [![npm version](https://badge.fury.io/js/geo-three.svg)](https://badge.fury.io/js/geo-three)[![GitHub version](https://badge.fury.io/gh/tentone%2Fgeo-three.svg)](https://badge.fury.io/gh/tentone%2Fgeo-three)
@@ -11,12 +13,6 @@
   - Providers should have a tile-based map system to be supported by the library.
 
 <img src="https://raw.githubusercontent.com/tentone/geo-three/master/readme/screenshot/b.png" width="380"><img src="https://raw.githubusercontent.com/tentone/geo-three/master/readme/screenshot/c.png" width="380"><img src="https://raw.githubusercontent.com/tentone/geo-three/master/readme/screenshot/e.png" width="380"><img src="https://raw.githubusercontent.com/tentone/geo-three/master/readme/screenshot/d.png" width="380">
-
-### Example
- - You can test some live demos of the library running from the project page.
- - Some of these examples might require API keys for the map services used.
-   - [Sandbox](https://tentone.github.io/geo-three/examples/providers.html)
-   - [Globe](https://tentone.github.io/geo-three/examples/transition.html)
 
 ### Usage
 
@@ -35,20 +31,6 @@ scene.add(map);
 // By default, coordinates are in meters. Resize to kilometers:
 map.scale.set(0.001, 0.001, 0.001);
 ```
-
-
-
-### Coordinates
-
-- The project internally uses a XY [EPSG:900913](https://epsg.io/900913) coordinate format to be compatible with the XYZ coordinates used in three.js
-- Use the `UnitsUtils` class to access the unit conversion methods. For example, to convert a latitude, longitude [WGS84](https://epsg.io/4326) pair value to XY coordinates you can use the code below:
-
-```javascript
-var coords = Geo.UnitsUtils.datumsToSpherical(40.940119, -8.535589);
-controls.target.set(coords.x, 0, -coords.y);
-```
-
-
 
 ### Tile Loading
 
@@ -240,14 +222,3 @@ export class CustomMapNode extends MapNode
 	}
 }
 ```
-
-
-
-### License
-
-- Project uses a MIT license that allow for commercial usage of the platform without any cost.
-- The license is available on the project GitHub page
-
-
-
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Ftentone%2Fgeo-three.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Ftentone%2Fgeo-three?ref=badge_large)
