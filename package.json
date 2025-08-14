@@ -33,7 +33,7 @@
 		"map",
 		"gps"
 	],
-	"author": "Tentone",
+	"author": "RuneEcho1357",
 	"license": "MIT",
 	"peerDependencies": {
 		"three": ">0.120.0"
