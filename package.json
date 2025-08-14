@@ -13,10 +13,6 @@
 		},
 		"./source/*": "./source/*"
 	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/tentone/geothree.git"
-	},
 	"scripts": {
 		"start": "npm run examples && http-server examples",
 		"examples": "rollup -c rollup.example.js",
